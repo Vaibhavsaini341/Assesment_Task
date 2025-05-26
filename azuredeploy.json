@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName": {
-            "defaultValue": "FinalTask",
+            "defaultValue": "FinalTaskVm",
             "type": "String",
             "metadata": {
                 "description": "The name of the virtual machine."

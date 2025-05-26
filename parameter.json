@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+      "value": "FinalTaskVm"
+    },
+    "adminUsername": {
+      "value": "vaibhav"
+    },
+    "adminPassword": {
+      "value": "asdfghjkl@123"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "vmSize": {
+      "value": "Standard_D4s_v3"
+    },
+    "allowedRdpSourceIp": {
+      "value": "*"
+    },
+    "customScriptUrl": {
+      "value": "https://storagebox10.blob.core.windows.net/script05/fetch.ps1?sp=r&st=2025-05-26T08:26:23Z&se=2025-05-28T16:26:23Z&sv=2024-11-04&sr=b&sig=Pn%2FW0ZfSgP03FzEojs%2FsW%2FjM7ufsGcuewmwRMz47H10%3D"
+    },
+    "dnsLabelPrefix": {
+      "value": "finaltask-dns"
+    }
+  }
+}

@@ -17,6 +17,7 @@
             }
         },
         "adminPassword": {
+            "defaultValue": "P@ssw0rd123",
             "type": "String",
             "metadata": {
                 "description": "Admin password for the virtual machine."

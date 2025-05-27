@@ -56,7 +56,8 @@
         "networkSecurityGroupName": "nsg",
         "virtualNetworkName": "vnet",
         "subnetName": "subnet",
-        "publicIpName": "[format('{0}-pip', parameters('vmName'))]"
+        "publicIpName": "[format('{0}-pip', parameters('vmName'))]",
+        "dnsLabel": "[toLower(format('{0}-dns', parameters('vmName')))]"
     },
     "resources": [
         {
@@ -88,7 +89,10 @@
             "name": "[variables('publicIpName')]",
             "location": "[parameters('location')]",
             "properties": {
-                "publicIPAllocationMethod": "Dynamic"
+                "publicIPAllocationMethod": "Dynamic",
+                "dnsSettings": {
+                    "domainNameLabel": "[variables('dnsLabel')]"
+                }
             }
         },
         {
@@ -215,6 +219,10 @@
         "publicIpAddress": {
             "type": "object",
             "value": "[reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIpName')), '2023-05-01')]"
+        },
+        "dnsName": {
+            "type": "String",
+            "value": "[concat(variables('dnsLabel'), '.', parameters('location'), '.cloudapp.azure.com')]"
         }
     }
 }

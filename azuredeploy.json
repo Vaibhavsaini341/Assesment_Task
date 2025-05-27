@@ -49,13 +49,6 @@
             "metadata": {
                 "description": "The URL of the custom script to execute on the VM (e.g., a PowerShell script in a storage account) or SAS URL for private container."
             }
-        },
-        "dnsLabelPrefix": {
-            "defaultValue": "[toLower(format('{0}-dns', parameters('vmName')))]",
-            "type": "String",
-            "metadata": {
-                "description": "DNS name label for the public IP (must be unique within the Azure region)."
-            }
         }
     },
     "variables": {
@@ -95,10 +88,7 @@
             "name": "[variables('publicIpName')]",
             "location": "[parameters('location')]",
             "properties": {
-                "publicIPAllocationMethod": "Dynamic",
-                "dnsSettings": {
-                    "domainNameLabel": "[parameters('dnsLabelPrefix')]"
-                }
+                "publicIPAllocationMethod": "Dynamic"
             }
         },
         {
@@ -225,10 +215,6 @@
         "publicIpAddress": {
             "type": "object",
             "value": "[reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIpName')), '2023-05-01')]"
-        },
-        "dnsName": {
-            "type": "String",
-            "value": "[concat(parameters('dnsLabelPrefix'), '.', parameters('location'), '.cloudapp.azure.com')]"
         }
     }
 }

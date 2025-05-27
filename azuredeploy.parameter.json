@@ -21,7 +21,7 @@
       "value": "*"
     },
     "customScriptUrl": {
-      "value": "https://storagebox10.blob.core.windows.net/script05/fetch.ps1?sp=r&st=2025-05-26T13:40:59Z&se=2025-05-26T21:40:59Z&sv=2024-11-04&sr=b&sig=SH8MxlxTQdN%2Fbh3Mt62upGV7oY6lIa0wAmAXuMOPi7k%3D"
+      "value": "https://storagebox10.blob.core.windows.net/script05/fetch.ps1?sp=r&st=2025-05-26T13:40:59Z&se=2025-05-26T21:40:59Z&sv=2024-11-04&sr=b&sig=SH8MxlxTQdN%2Fbh3Mt62upGV7oY6lIa0wAmAXuMOPi7k%D"
     },
     "dnsLabelPrefix": {
       "value": "finaltask-dns"

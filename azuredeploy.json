@@ -202,7 +202,7 @@
                     "fileUris": [
                         "[parameters('customScriptUrl')]"
                     ],
-                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File fetch.ps1"
+                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File deploy.ps1"
                 }
             }
         }

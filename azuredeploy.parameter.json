@@ -21,7 +21,7 @@
       "value": "*"
     },
     "customScriptUrl": {
-      "value": "https://storagebox10.blob.core.windows.net/script05/deploy.ps1?sp=r&st=2025-05-27T07:01:31Z&se=2025-05-29T15:01:31Z&sv=2024-11-04&sr=b&sig=psr1uBkI9z6h1m%2Bg0lIoR8bgy4gsoe38%2BPokp9F3w2A%3D"
+      "value": "https://finalassesmentask.blob.core.windows.net/assesment/deploy.ps1?sp=r&st=2025-05-28T10:20:26Z&se=2025-05-28T18:20:26Z&sv=2024-11-04&sr=b&sig=znlCVBcrVCB0pWX%2Fc6gtza6siQY2bFbt%2Fok8gNBOACo%3D"
     }
   }
 }
